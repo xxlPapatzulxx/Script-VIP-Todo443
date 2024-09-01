@@ -36,11 +36,11 @@ echo -e "\e[32;1m ╰═══════════════════�
 echo -e ""
 read -e -p "  [*] Ingresa Tu Token de Bot : " bottoken
 read -e -p "  [*] Ingresa tu Id de Telegram : " admin
-echo -e BOT_TOKEN='"'$bottoken'"' >> /usr/bin/kyt2/var.txt
-echo -e ADMIN='"'$admin'"' >> /usr/bin/kyt2/var.txt
-echo -e DOMAIN='"'$domain'"' >> /usr/bin/kyt2/var.txt
-echo -e PUB='"'$PUB'"' >> /usr/bin/kyt2/var.txt
-echo -e HOST='"'$NS'"' >> /usr/bin/kyt2/var.txt
+echo -e BOT_TOKEN='"'$bottoken'"' >> /usr/bin/kyt/var.txt
+echo -e ADMIN='"'$admin'"' >> /usr/bin/kyt/var.txt
+echo -e DOMAIN='"'$domain'"' >> /usr/bin/kyt/var.txt
+echo -e PUB='"'$PUB'"' >> /usr/bin/kyt/var.txt
+echo -e HOST='"'$NS'"' >> /usr/bin/kyt/var.txt
 clear
 
 if [ -e /etc/systemd/system/kyt2.service ]; then
@@ -72,9 +72,9 @@ cd
 # // STATUS SERVICE BOT
 bot_service2=$(systemctl status kyt2 | grep active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 if [[ $bot_service2 == "running" ]]; then 
-   sts_bot="${g}[ON]${NC}"
+   sts_bot2="${g}[ON]${NC}"
 else
-   sts_bot="${r}[OFF]${NC}"
+   sts_bot2="${r}[OFF]${NC}"
 fi
 
 rm -rf kyt2.sh
@@ -82,7 +82,7 @@ clear
 neofetch
 echo -e "  ${y} Tu Informacion del BOT"
 echo -e "\e[32;1m ╭══════════════════════════════════════════╮\e[0m"
-echo -e "  \e[1;97;101m Status BOT ${y}=$NC $sts_bot "
+echo -e "  \e[1;97;101m Status BOT ${y}=$NC $sts_bot2 "
 echo -e "      \e[1;97;101m Token BOT  ${y}=$NC $bottoken "
 echo -e "      \e[1;97;101m Admin ID   ${y}=$NC $admin "
 echo -e "      \e[1;97;101m Domain     ${y}=$NC $domain "
