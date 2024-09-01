@@ -1,12 +1,93 @@
-# --------------------------------------------------
-# ENCRYPTED BY B14CK-KN1GH7 (NAFIS FUAD)
-# Github   : http://github.com/nfs-tech-bd
-# Facebook : http://facebook.com/nafis.fuad.904
-# Telegram : http://t.me/Nafisfuad1
-# --------------------------------------------------
-NFS=$(mktemp)
-base64 -d  >${NFS}<<B14CK-KN1GH7
-IyEvYmluL2Jhc2gKTlM9JCggY2F0IC9ldGMveHJheS9kbnMgKQpQVUI9JCggY2F0IC9ldGMvc2xvd2Rucy9zZXJ2ZXIucHViICkKZG9tYWluPSQoY2F0IC9ldGMveHJheS9kb21haW4pCiNjb2xvcgpncmVuYm89IlxlWzkyOzFtIgpOQz0nXGVbMG0nCiNpbnN0YWxsCmFwdCB1cGRhdGUgJiYgYXB0IHVwZ3JhZGUKYXB0IGluc3RhbGwgbmVvZmV0Y2ggLXkKYXB0IGluc3RhbGwgcHl0aG9uMyBweXRob24zLXBpcCBnaXQKY2QgL3Vzci9iaW4Kd2dldCBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vSmVycnlTQkcvU0JHL21haW4vYm90L2t5dDIuemlwCnVuemlwIGt5dC56aXAKcGlwMyBpbnN0YWxsIC1yIGt5dC9yZXF1aXJlbWVudHMudHh0CmNsZWFyCndnZXQgaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0plcnJ5U0JHL1NCRy9tYWluL2JvdC9ib3QyLnppcAp1bnppcCBib3QuemlwCm12IGJvdC8qIC91c3IvYmluCmNobW9kICt4IC91c3IvYmluLyoKcm0gLXJmIGJvdC56aXAKCgpjbGVhcgplY2hvICIiCmZpZ2xldCAnTU9EcyBCeSBKRVJSWS1TQkcnIHwgbG9sY2F0CmVjaG8gLWUgIlxlWzMyOzFtIOKVreKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVrlxlWzBtIgplY2hvIC1lICJcZVsxOzk3OzEwMW0gICAgICAgICAgICAgICAgICAgICAgIEFERCBCT1QgUEFORUwgICAgICAgICAgICAgICAgICR7TkN9ICR7dX3ilIIke05DfSIKZWNobyAtZSAiXGVbMzI7MW0g4pWw4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWvXGVbMG0iCmVjaG8gLWUgIlxlWzMyOzFtIOKVreKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVrlxlWzBtIgplY2hvIC1lICJcZVsxOzk3OzEwMW0gICAgICBUdXRvcmlhbCBDcmVhciBCb3QgYW5kIElEIFRlbGVncmFtICAgICAgICAgICAgICAgICAgICR7TkN9IgplY2hvIC1lICJcZVsxOzk3OzEwMW0gICAgQ3JlYXIgQm90IHkgVG9rZW4gQm90IHVzYSA6IEBCb3RGYXRoZXIgICAgICAgICAgICAgICAgICR7TkN9IgplY2hvIC1lICJcZVsxOzk3OzEwMW0gICBJbmZvIElkIFRlbGVncmFtIDogQE1pc3NSb3NlX2JvdCB0ZWNsZWEgL2luZm8gICAgICAke05DfSIKZWNobyAtZSAiXGVbMzI7MW0g4pWw4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWvXGVbMG0iCmVjaG8gLWUgIiIKcmVhZCAtZSAtcCAiICBbKl0gSW5ncmVzYSBUdSBUb2tlbiBkZSBCb3QgOiAiIGJvdHRva2VuCnJlYWQgLWUgLXAgIiAgWypdIEluZ3Jlc2EgdHUgSWQgZGUgVGVsZWdyYW0gOiAiIGFkbWluCmVjaG8gLWUgQk9UX1RPS0VOPSciJyRib3R0b2tlbiciJyA+PiAvdXNyL2Jpbi9reXQvdmFyLnR4dAplY2hvIC1lIEFETUlOPSciJyRhZG1pbiciJyA+PiAvdXNyL2Jpbi9reXQvdmFyLnR4dAplY2hvIC1lIERPTUFJTj0nIickZG9tYWluJyInID4+IC91c3IvYmluL2t5dC92YXIudHh0CmVjaG8gLWUgUFVCPSciJyRQVUInIicgPj4gL3Vzci9iaW4va3l0L3Zhci50eHQKZWNobyAtZSBIT1NUPSciJyROUyciJyA+PiAvdXNyL2Jpbi9reXQvdmFyLnR4dApjbGVhcgoKaWYgWyAtZSAvZXRjL3N5c3RlbWQvc3lzdGVtL2t5dDIuc2VydmljZSBdOyB0aGVuCmVjaG8gIiIKZWxzZQpybSAtZnIgL2V0Yy9zeXN0ZW1kL3N5c3RlbS9reXQyLnNlcnZpY2UKZmkKCmNhdCA+IC9ldGMvc3lzdGVtZC9zeXN0ZW0va3l0Mi5zZXJ2aWNlIDw8IEVORApbVW5pdF0KRGVzY3JpcHRpb249U2ltcGxlIEJvdCBUZWxlIEJ5IC0gQEJ5SkVSUlkKQWZ0ZXI9bmV0d29yay50YXJnZXQKCltTZXJ2aWNlXQpXb3JraW5nRGlyZWN0b3J5PS91c3IvYmluCkV4ZWNTdGFydD0vdXNyL2Jpbi9weXRob24zIC1tIGt5dApSZXN0YXJ0PWFsd2F5cwoKW0luc3RhbGxdCldhbnRlZEJ5PW11bHRpLXVzZXIudGFyZ2V0CkVORAoKc3lzdGVtY3RsIGRhZW1vbi1yZWxvYWQKc3lzdGVtY3RsIHN0YXJ0IGt5dDIgCnN5c3RlbWN0bCBlbmFibGUga3l0MgpzeXN0ZW1jdGwgcmVzdGFydCBreXQyCmNkIAoKIyAvLyBTVEFUVVMgU0VSVklDRSBCT1QKYm90X3NlcnZpY2U9JChzeXN0ZW1jdGwgc3RhdHVzIGt5dDIgfCBncmVwIGFjdGl2ZSB8IGF3ayAne3ByaW50ICQzfScgfCBjdXQgLWQgIigiIC1mMiB8IGN1dCAtZCAiKSIgLWYxKQppZiBbWyAkYm90X3NlcnZpY2UgPT0gInJ1bm5pbmciIF1dOyB0aGVuIAogICBzdHNfYm90PSIke2d9W09OXSR7TkN9IgplbHNlCiAgIHN0c19ib3Q9IiR7cn1bT0ZGXSR7TkN9IgpmaQoKcm0gLXJmIGt5dC5zaApjbGVhcgpuZW9mZXRjaAplY2hvIC1lICIgICR7eX0gVHUgSW5mb3JtYWNpb24gZGVsIEJPVCIKZWNobyAtZSAiXGVbMzI7MW0g4pWt4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWuXGVbMG0iCmVjaG8gLWUgIiAgXGVbMTs5NzsxMDFtIFN0YXR1cyBCT1QgJHt5fT0kTkMgJHN0c19ib3QgIgplY2hvIC1lICIgICAgICBcZVsxOzk3OzEwMW0gVG9rZW4gQk9UICAke3l9PSROQyAkYm90dG9rZW4gIgplY2hvIC1lICIgICAgICBcZVsxOzk3OzEwMW0gQWRtaW4gSUQgICAke3l9PSROQyAkYWRtaW4gIgplY2hvIC1lICIgICAgICBcZVsxOzk3OzEwMW0gRG9tYWluICAgICAke3l9PSROQyAkZG9tYWluICIKZWNobyAtZSAiXGVbMzI7MW0g4pWw4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWvXGVbMG0iCmVjaG8gLWUgIiIKaGlzdG9yeSAtYwpyZWFkIC1wICIgIFByZXNpb25lIFsgRW50ZXIgXSBwYXJhIHJlZ3Jlc2FyIGFsIG1lbsO6IgptZW51Cg==
-B14CK-KN1GH7
-source ${NFS}
-rm -rf ${NFS}
+#!/bin/bash
+NS=$( cat /etc/xray/dns )
+PUB=$( cat /etc/slowdns/server.pub )
+domain=$(cat /etc/xray/domain)
+#color
+grenbo="\e[92;1m"
+NC='\e[0m'
+#install
+apt update && apt upgrade
+apt install neofetch -y
+apt install python3 python3-pip git
+cd /usr/bin
+wget https://raw.githubusercontent.com/JerrySBG/SBG/main/bot/kyt2.zip
+unzip kyt2.zip
+pip3 install -r kyt/requirements.txt
+clear
+wget https://raw.githubusercontent.com/JerrySBG/SBG/main/bot/bot2.zip
+unzip bot2.zip
+mv bot2/* /usr/bin
+chmod +x /usr/bin/*
+rm -rf bot2.zip
+rm -rf kyt2.zip
+
+
+clear
+echo ""
+figlet 'MODs By JERRY-SBG' | lolcat
+echo -e "\e[32;1m ╭════════════════════════════════════════════════╮\e[0m"
+echo -e "\e[1;97;101m                       ADD BOT PANEL                 ${NC} ${u}│${NC}"
+echo -e "\e[32;1m ╰════════════════════════════════════════════════╯\e[0m"
+echo -e "\e[32;1m ╭════════════════════════════════════════════════╮\e[0m"
+echo -e "\e[1;97;101m      Tutorial Crear Bot and ID Telegram                   ${NC}"
+echo -e "\e[1;97;101m    Crear Bot y Token Bot usa : @BotFather                 ${NC}"
+echo -e "\e[1;97;101m   Info Id Telegram : @MissRose_bot teclea /info      ${NC}"
+echo -e "\e[32;1m ╰════════════════════════════════════════════════╯\e[0m"
+echo -e ""
+read -e -p "  [*] Ingresa Tu Token de Bot : " bottoken
+read -e -p "  [*] Ingresa tu Id de Telegram : " admin
+echo -e BOT_TOKEN='"'$bottoken'"' >> /usr/bin/kyt2/var.txt
+echo -e ADMIN='"'$admin'"' >> /usr/bin/kyt2/var.txt
+echo -e DOMAIN='"'$domain'"' >> /usr/bin/kyt2/var.txt
+echo -e PUB='"'$PUB'"' >> /usr/bin/kyt2/var.txt
+echo -e HOST='"'$NS'"' >> /usr/bin/kyt2/var.txt
+clear
+
+if [ -e /etc/systemd/system/kyt2.service ]; then
+echo ""
+else
+rm -fr /etc/systemd/system/kyt2.service
+fi
+
+cat > /etc/systemd/system/kyt2.service << END
+[Unit]
+Description=Simple Bot Tele By - @ByJERRY
+After=network.target
+
+[Service]
+WorkingDirectory=/usr/bin
+ExecStart=/usr/bin/python3 -m kyt
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+END
+
+systemctl daemon-reload
+systemctl start kyt2
+systemctl enable kyt2
+systemctl restart kyt2
+cd 
+
+# // STATUS SERVICE BOT
+bot_service2=$(systemctl status kyt2 | grep active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
+if [[ $bot_service2 == "running" ]]; then 
+   sts_bot="${g}[ON]${NC}"
+else
+   sts_bot="${r}[OFF]${NC}"
+fi
+
+rm -rf kyt2.sh
+clear
+neofetch
+echo -e "  ${y} Tu Informacion del BOT"
+echo -e "\e[32;1m ╭══════════════════════════════════════════╮\e[0m"
+echo -e "  \e[1;97;101m Status BOT ${y}=$NC $sts_bot "
+echo -e "      \e[1;97;101m Token BOT  ${y}=$NC $bottoken "
+echo -e "      \e[1;97;101m Admin ID   ${y}=$NC $admin "
+echo -e "      \e[1;97;101m Domain     ${y}=$NC $domain "
+echo -e "\e[32;1m ╰══════════════════════════════════════════╯\e[0m"
+echo -e ""
+history -c
+read -p "  Presione [ Enter ] para regresar al menú"
+menu
