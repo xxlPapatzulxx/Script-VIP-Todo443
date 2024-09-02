@@ -10,11 +10,11 @@ apt update && apt upgrade
 apt install neofetch -y
 apt install python3 python3-pip git
 cd /usr/bin
-wget https://raw.githubusercontent.com/JerrySBG/SBG/main/bot/kyt.zip
+wget https://raw.githubusercontent.com/JerrySBG/scvps/main/limit/kyt.zip
 unzip kyt.zip
 pip3 install -r kyt/requirements.txt
 clear
-wget https://raw.githubusercontent.com/JerrySBG/SBG/main/bot/bot.zip
+wget https://raw.githubusercontent.com/JerrySBG/scvps/main/limit/bot.zip
 unzip bot.zip
 mv bot/* /usr/bin
 chmod +x /usr/bin/*
@@ -24,14 +24,14 @@ rm -rf bot.zip
 clear
 echo ""
 figlet 'MODs By JERRY-SBG' | lolcat
-echo -e "\e[32;1m ╭════════════════════════════════════════════════╮\e[0m"
-echo -e "\e[1;97;101m                       ADD BOT PANEL                 ${NC} ${u}│${NC}"
-echo -e "\e[32;1m ╰════════════════════════════════════════════════╯\e[0m"
-echo -e "\e[32;1m ╭════════════════════════════════════════════════╮\e[0m"
-echo -e "\e[1;97;101m      Tutorial Crear Bot and ID Telegram                   ${NC}"
-echo -e "\e[1;97;101m    Crear Bot y Token Bot usa : @BotFather                 ${NC}"
-echo -e "\e[1;97;101m   Info Id Telegram : @MissRose_bot teclea /info      ${NC}"
-echo -e "\e[32;1m ╰════════════════════════════════════════════════╯\e[0m"
+echo -e "$u ┌────────────────────────────────────────────────┐${NC}"
+echo -e "$u │ \e[1;97;101m                ADD BOT PANEL                 ${NC} ${u}│${NC}"
+echo -e "$u └────────────────────────────────────────────────┘${NC}"
+echo -e "$u ┌────────────────────────────────────────────────┐${NC}"
+echo -e "$u │ ${g}Tutorial Creat Bot and ID Telegram                   ${NC}"
+echo -e "$u │ ${g}Creat Bot and Token Bot : @BotFather                 ${NC}"
+echo -e "$u │ ${g}Info Id Telegram : @MissRose_bot perintah /info      ${NC}"
+echo -e "$u └────────────────────────────────────────────────┘${NC}"
 echo -e ""
 read -e -p "  [*] Ingresa Tu Token de Bot : " bottoken
 read -e -p "  [*] Ingresa tu Id de Telegram : " admin
@@ -69,7 +69,7 @@ systemctl restart kyt
 cd 
 
 # // STATUS SERVICE BOT
-bot_service=$(systemctl status kyt | grep active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
+bot_service=$(systemctl status bot | grep active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 if [[ $bot_service == "running" ]]; then 
    sts_bot="${g}[ON]${NC}"
 else
@@ -79,14 +79,14 @@ fi
 rm -rf kyt.sh
 clear
 neofetch
-echo -e "  ${y} Tu Informacion del BOT"
-echo -e "\e[32;1m ╭══════════════════════════════════════════╮\e[0m"
-echo -e "  \e[1;97;101m Status BOT ${y}=$NC $sts_bot "
-echo -e "      \e[1;97;101m Token BOT  ${y}=$NC $bottoken "
-echo -e "      \e[1;97;101m Admin ID   ${y}=$NC $admin "
-echo -e "      \e[1;97;101m Domain     ${y}=$NC $domain "
-echo -e "\e[32;1m ╰══════════════════════════════════════════╯\e[0m"
+echo -e "  ${y} Your Data BOT Info"
+echo -e "  ${u}┌───────────────────────────────────┐${NC}"
+echo -e "  ${u}│$r Status BOT ${y}=$NC $sts_bot "
+echo -e "  ${u}│$r Token BOT  ${y}=$NC $bottoken "
+echo -e "  ${u}│$r Admin ID   ${y}=$NC $admin "
+echo -e "  ${u}│$r Domain     ${y}=$NC $domain "
+echo -e "  ${u}└───────────────────────────────────┘${NC}"
 echo -e ""
 history -c
 read -p "  Presione [ Enter ] para regresar al menú"
-menu
+add-bot-panel
