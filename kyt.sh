@@ -10,11 +10,11 @@ apt update && apt upgrade
 apt install neofetch -y
 apt install python3 python3-pip git
 cd /usr/bin
-wget https://raw.githubusercontent.com/JerrySBG/scvps/main/limit/kyt.zip
+wget https://raw.githubusercontent.com/JerrySBG/SBG/main/bot/kyt.zip
 unzip kyt.zip
 pip3 install -r kyt/requirements.txt
 clear
-wget https://raw.githubusercontent.com/JerrySBG/scvps/main/limit/bot.zip
+wget https://raw.githubusercontent.com/JerrySBG/SBG/main/bot/bot.zip
 unzip bot.zip
 mv bot/* /usr/bin
 chmod +x /usr/bin/*
@@ -69,7 +69,7 @@ systemctl restart kyt
 cd 
 
 # // STATUS SERVICE BOT
-bot_service=$(systemctl status bot | grep active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
+bot_service=$(systemctl status kyt | grep active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 if [[ $bot_service == "running" ]]; then 
    sts_bot="${g}[ON]${NC}"
 else
