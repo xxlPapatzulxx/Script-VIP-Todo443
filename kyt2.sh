@@ -82,10 +82,10 @@ clear
 neofetch
 echo -e "  ${y} Tu Informacion del BOT"
 echo -e "\e[32;1m ╭══════════════════════════════════════════╮\e[0m"
-echo -e "  \e[1;97;101m Status BOT ${y}=$NC $sts_bot "
-echo -e "      \e[1;97;101m Token BOT  ${y}=$NC $bottoken "
-echo -e "      \e[1;97;101m Admin ID   ${y}=$NC $admin "
-echo -e "      \e[1;97;101m Domain     ${y}=$NC $domain "
+echo -e "  \e[1;97;101m Status BOT ${y}=$NC $sts_bot \e[0m"
+echo -e "      \e[1;97;101m Token BOT  ${y}=$NC $bottoken \e[0m"
+echo -e "      \e[1;97;101m Admin ID   ${y}=$NC $admin \e[0m"
+echo -e "      \e[1;97;101m Domain     ${y}=$NC $domain \e[0m"
 echo -e "\e[32;1m ╰══════════════════════════════════════════╯\e[0m"
 echo -e ""
 history -c
