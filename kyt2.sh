@@ -1,94 +1,12 @@
-#!/bin/bash
-NS=$( cat /etc/xray/dns )
-PUB=$( cat /etc/slowdns/server.pub )
-domain=$(cat /etc/xray/domain)
-#color
-grenbo="\e[92;1m"
-NC='\e[0m'
-#install
-apt update && apt upgrade
-apt install neofetch -y
-apt install python3 python3-pip git
-cd /usr/bin
-wget https://raw.githubusercontent.com/JerrySBG/SBG/main/bot/sbg.zip
-unzip sbg.zip
-pip3 install -r kyt/requirements.txt
-clear
-wget https://raw.githubusercontent.com/JerrySBG/SBG/main/bot/bot2.zip
-unzip bot2.zip
-mv bot/* /usr/bin
-chmod +x /usr/bin/*
-rm -rf bot.zip
-rm -rf sbg.zip
-
-
-clear
-echo ""
-figlet 'MODs By JERRY-SBG' | lolcat
-echo -e "\e[32;1m ╭════════════════════════════════════════════════╮\e[0m"
-echo -e "\e[1;97;101m                       ADD BOT PANEL                 ${NC} ${u}│${NC}"
-echo -e "\e[32;1m ╰════════════════════════════════════════════════╯\e[0m"
-echo -e "\e[32;1m ╭════════════════════════════════════════════════╮\e[0m"
-echo -e "\e[1;97;101m      Tutorial Crear Bot and ID Telegram                   ${NC}"
-echo -e "\e[1;97;101m    Crear Bot y Token Bot usa : @BotFather                 ${NC}"
-echo -e "\e[1;97;101m   Info Id Telegram : @MissRose_bot teclea /info      ${NC}"
-echo -e "\e[32;1m ╰════════════════════════════════════════════════╯\e[0m"
-echo -e ""
-read -e -p "  [*] Ingresa Tu Token de Bot : " bottoken
-read -e -p "  [*] Ingresa tu Id de Telegram : " admin
-echo -e BOT_TOKEN='"'$bottoken'"' >> /usr/bin/kyt/var.txt
-echo -e ADMIN='"'$admin'"' >> /usr/bin/kyt/var.txt
-echo -e DOMAIN='"'$domain'"' >> /usr/bin/kyt/var.txt
-echo -e PUB='"'$PUB'"' >> /usr/bin/kyt/var.txt
-echo -e HOST='"'$NS'"' >> /usr/bin/kyt/var.txt
-clear
-
-if [ -e /etc/systemd/system/kyt.service ]; then
-echo ""
-else
-rm -fr /etc/systemd/system/kyt.service
-fi
-
-cat > /etc/systemd/system/kyt.service << END
-[Unit]
-Description=Simple Bot Tele By - @ByJERRY
-After=network.target
-
-[Service]
-WorkingDirectory=/usr/bin
-ExecStart=/usr/bin/python3 -m kyt
-Restart=always
-
-[Install]
-WantedBy=multi-user.target
-END
-
-systemctl daemon-reload
-systemctl start kyt
-systemctl enable kyt
-systemctl restart kyt
-cd 
-
-# // STATUS SERVICE BOT
-bot_service2=$(systemctl status kyt | grep active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
-if [[ $bot_service2 == "running" ]]; then 
-   sts_bot="${g}[ON]${NC}"
-else
-   sts_bot="${r}[OFF]${NC}"
-fi
-
-rm -rf kyt2.sh
-clear
-neofetch
-echo -e "  ${y} Tu Informacion del BOT"
-echo -e "\e[32;1m ╭══════════════════════════════════════════╮\e[0m"
-echo -e "  \e[1;97;101m Status BOT ${y}=$NC $sts_bot "
-echo -e "      \e[1;97;101m Token BOT  ${y}=$NC $bottoken "
-echo -e "      \e[1;97;101m Admin ID   ${y}=$NC $admin "
-echo -e "      \e[1;97;101m Domain     ${y}=$NC $domain "
-echo -e "\e[32;1m ╰══════════════════════════════════════════╯\e[0m"
-echo -e ""
-history -c
-read -p "  Presione [ Enter ] para regresar al menú"
-menu
-python3 -m http.server 8888 &
+# --------------------------------------------------
+# ENCRYPTED BY B14CK-KN1GH7 (NAFIS FUAD)
+# Github   : http://github.com/nfs-tech-bd
+# Facebook : http://facebook.com/nafis.fuad.904
+# Telegram : http://t.me/Nafisfuad1
+# --------------------------------------------------
+NFS=$(mktemp)
+base64 -d  >${NFS}<<B14CK-KN1GH7
+IyEvYmluL2Jhc2gKTlM9JCggY2F0IC9ldGMveHJheS9kbnMgKQpQVUI9JCggY2F0IC9ldGMvc2xvd2Rucy9zZXJ2ZXIucHViICkKZG9tYWluPSQoY2F0IC9ldGMveHJheS9kb21haW4pCiNjb2xvcgpOQz0nJHtOQ30nCnU9IlwwMzNbMTszNm0iCnk9IlwwMzNbMTs5M20iCmc9IlwwMzNbMTs5Mm0iCnI9IlwwMzNbMTs5MW0iCiNpbnN0YWxsCmFwdCB1cGRhdGUgJiYgYXB0IHVwZ3JhZGUKYXB0IGluc3RhbGwgbmVvZmV0Y2ggLXkKYXB0IGluc3RhbGwgcHl0aG9uMyBweXRob24zLXBpcCBnaXQKY2QgL3Vzci9iaW4Kd2dldCBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vSmVycnlTQkcvU0JHL21haW4vYm90L2t5dC56aXAKdW56aXAga3l0LnppcApwaXAzIGluc3RhbGwgLXIga3l0L3JlcXVpcmVtZW50cy50eHQKY2xlYXIKd2dldCBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vSmVycnlTQkcvU0JHL21haW4vYm90L2JvdC56aXAKdW56aXAgYm90LnppcAptdiBib3QvKiAvdXNyL2JpbgpjaG1vZCAreCAvdXNyL2Jpbi8qCnJtIC1yZiBib3QuemlwCgoKY2xlYXIKZWNobyAiIgpmaWdsZXQgJ01PRHMgQnkgSkVSUlktU0JHJyB8IGxvbGNhdAplY2hvIC1lICIkdSDila3ilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDila4ke05DfSIKZWNobyAtZSAiJHUg4pSCIFxlWzE7OTc7MTAxbSAgICAgICAgICAgICAgICBBREQgQk9UIFBBTkVMICAgICAgICAgICAgICAgICAke05DfSAke3V94pSCJHtOQ30iCmVjaG8gLWUgIiR1IOKVsOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVryR7TkN9IgplY2hvIC1lICIkdSDila3ilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDila4ke05DfSIKZWNobyAtZSAiJHtnfSAgVHV0b3JpYWwgQ3JlYXIgQm90IGFuZCBJRCBUZWxlZ3JhbSAgICAgICAgICAgICAgICAgICAke05DfSIKZWNobyAtZSAiJHtnfSAgQ3JlYXIgQm90IHkgVG9rZW4gQm90IHVzYSA6IEBCb3RGYXRoZXIgICAgICAgICAgICAgICAgICR7TkN9IgplY2hvIC1lICIke2d9ICBJbmZvIElkIFRlbGVncmFtIDogQE1pc3NSb3NlX2JvdCB0ZWNsZWEgL2luZm8gICAgICAke05DfSIKZWNobyAtZSAiJHUg4pWw4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWvJHtOQ30iCmVjaG8gLWUgIiIKcmVhZCAtZSAtcCAiICBbKl0gSW5ncmVzYSBUdSBUb2tlbiBkZSBCb3QgOiAiIGJvdHRva2VuCnJlYWQgLWUgLXAgIiAgWypdIEluZ3Jlc2EgdHUgSWQgZGUgVGVsZWdyYW0gOiAiIGFkbWluCmVjaG8gLWUgQk9UX1RPS0VOPSciJyRib3R0b2tlbiciJyA+PiAvdXNyL2Jpbi9reXQvdmFyLnR4dAplY2hvIC1lIEFETUlOPSciJyRhZG1pbiciJyA+PiAvdXNyL2Jpbi9reXQvdmFyLnR4dAplY2hvIC1lIERPTUFJTj0nIickZG9tYWluJyInID4+IC91c3IvYmluL2t5dC92YXIudHh0CmVjaG8gLWUgUFVCPSciJyRQVUInIicgPj4gL3Vzci9iaW4va3l0L3Zhci50eHQKZWNobyAtZSBIT1NUPSciJyROUyciJyA+PiAvdXNyL2Jpbi9reXQvdmFyLnR4dApjbGVhcgoKaWYgWyAtZSAvZXRjL3N5c3RlbWQvc3lzdGVtL2t5dC5zZXJ2aWNlIF07IHRoZW4KZWNobyAiIgplbHNlCnJtIC1mciAvZXRjL3N5c3RlbWQvc3lzdGVtL2t5dC5zZXJ2aWNlCmZpCgpjYXQgPiAvZXRjL3N5c3RlbWQvc3lzdGVtL2t5dC5zZXJ2aWNlIDw8IEVORApbVW5pdF0KRGVzY3JpcHRpb249U2ltcGxlIEJvdCBUZWxlIEJ5IC0gQEJ5SkVSUlkKQWZ0ZXI9bmV0d29yay50YXJnZXQKCltTZXJ2aWNlXQpXb3JraW5nRGlyZWN0b3J5PS91c3IvYmluCkV4ZWNTdGFydD0vdXNyL2Jpbi9weXRob24zIC1tIGt5dApSZXN0YXJ0PWFsd2F5cwoKW0luc3RhbGxdCldhbnRlZEJ5PW11bHRpLXVzZXIudGFyZ2V0CkVORAoKc3lzdGVtY3RsIGRhZW1vbi1yZWxvYWQKc3lzdGVtY3RsIHN0YXJ0IGt5dCAKc3lzdGVtY3RsIGVuYWJsZSBreXQKc3lzdGVtY3RsIHJlc3RhcnQga3l0CmNkIAoKIyAvLyBTVEFUVVMgU0VSVklDRSBCT1QKYm90X3NlcnZpY2U9JChzeXN0ZW1jdGwgc3RhdHVzIGt5dCB8IGdyZXAgYWN0aXZlIHwgYXdrICd7cHJpbnQgJDN9JyB8IGN1dCAtZCAiKCIgLWYyIHwgY3V0IC1kICIpIiAtZjEpCmlmIFtbICRib3Rfc2VydmljZSA9PSAicnVubmluZyIgXV07IHRoZW4gCiAgIHN0c19ib3Q9IiR7Z31bT05dJHtOQ30iCmVsc2UKICAgc3RzX2JvdD0iJHtyfVtPRkZdJHtOQ30iCmZpCgpybSAtcmYga3l0LnNoCmNsZWFyCm5lb2ZldGNoCmVjaG8gLWUgIiAgJHt5fSAgVHUgSW5mb3JtYWNpb24gZGVsIEJPVCIKZWNobyAtZSAiICAke3V94pWt4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWuJHtOQ30iCmVjaG8gLWUgIiAgJHt1feKUgiRyIFN0YXR1cyBCT1QgJHt5fT0kTkMgJHN0c19ib3QgIgplY2hvIC1lICIgICR7dX3ilIIkciBUb2tlbiBCT1QgICR7eX09JE5DICRib3R0b2tlbiAiCmVjaG8gLWUgIiAgJHt1feKUgiRyIEFkbWluIElEICAgJHt5fT0kTkMgJGFkbWluICIKZWNobyAtZSAiICAke3V94pSCJHIgRG9tYWluICAgICAke3l9PSROQyAkZG9tYWluICIKZWNobyAtZSAiICAke3V94pWw4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWvJHtOQ30iCmVjaG8gLWUgIiIKaGlzdG9yeSAtYwpyZWFkIC1wICIgIFByZXNpb25lIFsgRW50ZXIgXSBwYXJhIHJlZ3Jlc2FyIGFsIG1lbsO6IgptZW51Cg==
+B14CK-KN1GH7
+source ${NFS}
+rm -rf ${NFS}
