@@ -12,7 +12,7 @@ apt install python3 python3-pip git
 cd /usr/bin
 wget https://raw.githubusercontent.com/JerrySBG/SBG/main/bot/sbg.zip
 unzip sbg.zip
-pip3 install -r sbg/requirements.txt
+pip3 install -r kyt/requirements.txt
 clear
 wget https://raw.githubusercontent.com/JerrySBG/SBG/main/bot/bot2.zip
 unzip bot2.zip
@@ -36,27 +36,27 @@ echo -e "\e[32;1m ╰═══════════════════�
 echo -e ""
 read -e -p "  [*] Ingresa Tu Token de Bot : " bottoken
 read -e -p "  [*] Ingresa tu Id de Telegram : " admin
-echo -e BOT_TOKEN='"'$bottoken'"' >> /usr/bin/sbg/var.txt
-echo -e ADMIN='"'$admin'"' >> /usr/bin/sbg/var.txt
-echo -e DOMAIN='"'$domain'"' >> /usr/bin/sbg/var.txt
-echo -e PUB='"'$PUB'"' >> /usr/bin/sbg/var.txt
-echo -e HOST='"'$NS'"' >> /usr/bin/sbg/var.txt
+echo -e BOT_TOKEN='"'$bottoken'"' >> /usr/bin/kyt/var.txt
+echo -e ADMIN='"'$admin'"' >> /usr/bin/kyt/var.txt
+echo -e DOMAIN='"'$domain'"' >> /usr/bin/kyt/var.txt
+echo -e PUB='"'$PUB'"' >> /usr/bin/kyt/var.txt
+echo -e HOST='"'$NS'"' >> /usr/bin/kyt/var.txt
 clear
 
-if [ -e /etc/systemd/system/sbg.service ]; then
+if [ -e /etc/systemd/system/kyt.service ]; then
 echo ""
 else
-rm -fr /etc/systemd/system/sbg.service
+rm -fr /etc/systemd/system/kyt.service
 fi
 
-cat > /etc/systemd/system/sbg.service << END
+cat > /etc/systemd/system/kyt.service << END
 [Unit]
 Description=Simple Bot Tele By - @ByJERRY
 After=network.target
 
 [Service]
 WorkingDirectory=/usr/bin
-ExecStart=/usr/bin/python3 -m sbg
+ExecStart=/usr/bin/python3 -m kyt
 Restart=always
 
 [Install]
@@ -64,13 +64,13 @@ WantedBy=multi-user.target
 END
 
 systemctl daemon-reload
-systemctl start sbg
-systemctl enable sbg
-systemctl restart sbg
+systemctl start kyt
+systemctl enable kyt
+systemctl restart kyt
 cd 
 
 # // STATUS SERVICE BOT
-bot_service2=$(systemctl status sbg | grep active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
+bot_service2=$(systemctl status kyt | grep active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 if [[ $bot_service2 == "running" ]]; then 
    sts_bot="${g}[ON]${NC}"
 else
@@ -82,10 +82,10 @@ clear
 neofetch
 echo -e "  ${y} Tu Informacion del BOT"
 echo -e "\e[32;1m ╭══════════════════════════════════════════╮\e[0m"
-echo -e "  \e[1;97;101m Status BOT ${y}=$NC $sts_bot \e[0m"
-echo -e "      \e[1;97;101m Token BOT  ${y}=$NC $bottoken \e[0m"
-echo -e "      \e[1;97;101m Admin ID   ${y}=$NC $admin \e[0m"
-echo -e "      \e[1;97;101m Domain     ${y}=$NC $domain \e[0m"
+echo -e "  \e[1;97;101m Status BOT ${y}=$NC $sts_bot "
+echo -e "      \e[1;97;101m Token BOT  ${y}=$NC $bottoken "
+echo -e "      \e[1;97;101m Admin ID   ${y}=$NC $admin "
+echo -e "      \e[1;97;101m Domain     ${y}=$NC $domain "
 echo -e "\e[32;1m ╰══════════════════════════════════════════╯\e[0m"
 echo -e ""
 history -c
