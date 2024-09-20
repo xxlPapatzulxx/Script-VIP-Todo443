@@ -5,7 +5,7 @@ LISTENING_ADDR = '0.0.0.0'
 if sys.argv[1:]:
     LISTENING_PORTS = [int(port) for port in sys.argv[1].split(',')]
 else:
-    LISTENING_PORTS = [10015]
+    LISTENING_PORTS = [8089]
 # Passwd
 PASS = ''
 
