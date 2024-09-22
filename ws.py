@@ -1,18 +1,18 @@
 import socket, threading, select, signal, sys, time, getopt
 
 # Listen
-LISTENING_ADDR = '0.0.0.0'
+LISTENING_ADDR = '127.0.0.1'
 if sys.argv[1:]:
     LISTENING_PORTS = [int(port) for port in sys.argv[1].split(',')]
 else:
-    LISTENING_PORTS = [8089]
+    LISTENING_PORTS = 10015
 # Passwd
 PASS = ''
 
 # CONST
 BUFLEN = 4096 * 4
 TIMEOUT = 60
-DEFAULT_HOSTS = ['127.0.0.1:109', '127.0.0.1:2223', '127.0.0.1:2222', '127.0.0.1:1194']
+DEFAULT_HOSTS = '127.0.0.1:2222'
 RESPONSE = 'HTTP/1.1 101 Switching Protocol\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: foo\r\n\r\n'
 
 class Server(threading.Thread):
