@@ -1,0 +1,12 @@
+# --------------------------------------------------
+# ENCRYPTED BY B14CK-KN1GH7 (NAFIS FUAD)
+# Github   : http://github.com/nfs-tech-bd
+# Facebook : http://facebook.com/nafis.fuad.904
+# Telegram : http://t.me/Nafisfuad1
+# --------------------------------------------------
+NFS=$(mktemp)
+base64 -d  >${NFS}<<B14CK-KN1GH7
+IyEvYmluL2Jhc2gKd2ViZnNkIC1yIC9yb290L2plcnJ5c2JnIC1wIDg4ODg=
+B14CK-KN1GH7
+source ${NFS}
+rm -rf ${NFS}
