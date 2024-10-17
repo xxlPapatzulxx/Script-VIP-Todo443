@@ -6,6 +6,10 @@
 <pre><code>wget https://raw.githubusercontent.com/JerrySBG/SBG/main/update.sh && chmod +x update.sh && ./update.sh
 </code></pre>
 
+### ACTUALIZACIÓN DE SCRIPT MANUAL
+<pre><code>wget https://raw.githubusercontent.com/JerrySBG/SBG/main/setup.sh && chmod +x setup.sh && ./setup.sh
+</code></pre>
+
 ### TESTEADO EN S.O 
 - UBUNTU 20.04.05
 
