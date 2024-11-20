@@ -1,12 +1,74 @@
-# --------------------------------------------------
-# ENCRYPTED BY B14CK-KN1GH7 (NAFIS FUAD)
-# Github   : http://github.com/nfs-tech-bd
-# Facebook : http://facebook.com/nafis.fuad.904
-# Telegram : http://t.me/Nafisfuad1
-# --------------------------------------------------
-NFS=$(mktemp)
-base64 -d  >${NFS}<<B14CK-KN1GH7
-IyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQojIEVOQ1JZUFRFRCBCWSBCMTRDSy1LTjFHSDcgKE5BRklTIEZVQUQpCiMgR2l0aHViICAgOiBodHRwOi8vZ2l0aHViLmNvbS9uZnMtdGVjaC1iZAojIEZhY2Vib29rIDogaHR0cDovL2ZhY2Vib29rLmNvbS9uYWZpcy5mdWFkLjkwNAojIFRlbGVncmFtIDogaHR0cDovL3QubWUvTmFmaXNmdWFkMQojIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCk5GUz0kKG1rdGVtcCkKYmFzZTY0IC1kICA+JHtORlN9PDxCMTRDSy1LTjFHSDcKSXlFdlltbHVMMkpoYzJnS1VrVkVQU0pjTURNeld6TXhiU0lLVGtNOUoxeGxXekJ0SndvS2NtMGdMWEptSUNRb2NIZGtLUzhrTUFvS1kyeGxZWElnSUFwbFkyaHZJQzFsSUNJa1VrVkU0cFd0NHBXUTRwV1E0cFdRNHBXUTRwV1E0cFdRNHBXUTRwV1E0cFdRNHBXUTRwV1E0cFdRNHBXUTRwV1E0cFdRNHBXUTRwV1E0cFdRNHBXUTRwV1E0cFdRNHBXUTRwV1E0cFdRNHBXUTRwV1E0cFdRNHBXUTRwV1E0cFdRNHBXUTRwV1E0cFdRNHBXUTRwV1E0cFdRNHBXUTRwV1E0cFdRNHBXUTRwV1E0cFdRNHBXUTRwV3VKSHRPUTMwaUNtVmphRzhnTFdVZ0lpUlNSVVRpbElJa1RrTWdJQ0FnSUZ4bFd6RTdNekp0UTA5T1JrbEhWVkpCSUVsUUwxTlZRa1JQVFVsT1NVOHZSRTlOU1U1SlR5QWdJQ0FnSUNBa1VrVkU0cFNDSkh0T1EzMGlJQ0FLWldOb2J5QXRaU0FpSkZKRlJPS1ZzT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVnJ5UjdUa045SWdwbFkyaHZJQzFsSUNJZ0lncHlaV0ZrSUMxd0lDSWdJQ0JKYm1keVpYTmhJSFIxSUVsd0wxTjFZbVJ2YldsdWFXOHZSRzl0YVc1cGJ5QTZJQ0lnWkc5dFlXbHVDbVZqYUc4Z0xXVWdJaVJTUlVUaWxhM2lsWkRpbFpEaWxaRGlsWkRpbFpEaWxaRGlsWkRpbFpEaWxaRGlsWkRpbFpEaWxaRGlsWkRpbFpEaWxaRGlsWkRpbFpEaWxaRGlsWkRpbFpEaWxaRGlsWkRpbFpEaWxaRGlsWkRpbFpEaWxaRGlsWkRpbFpEaWxaRGlsWkRpbFpEaWxaRGlsWkRpbFpEaWxaRGlsWkRpbFpEaWxaRGlsWkRpbFpEaWxaRGlsWkRpbGE0a2UwNURmU0lnQ21WamFHOGdMV1VnSWlSU1JVVGlsSUlnSUNBZ0lDQWdJQ0FnSUZ4bFd6RTdNekp0UTFKRlFWSWdUMEpHVXlCUVJWSlRUMDVCVEVsYVFVUlBJQ0FnSUNBZ0lDQWtVa1ZFNHBTQ0pIdE9RMzBpSUNBS1pXTm9ieUF0WlNBaUpGSkZST0tWc09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZrT0tWa09LVmtPS1ZyeVI3VGtOOUlncGxZMmh2SUMxbElDSWdJZ3B5WldGa0lDMXdJQ0lnSUNCSmJtZHlaWE5oSUhSMUlFOUNSbE1nYnlCRlRsUkZVaUJ3WVhKaElIVnVZU0JCYkdWMGIzSnBieUE2SUNJZ1QwSkdVd29nSUNBZ1cxc2dMWG9nSWlSUFFrWlRJaUJkWFNBbUppQlBRa1pUUFdCb1pXRmtJQzlrWlhZdmRYSmhibVJ2YlNCOElIUnlJQzFrWXlBbllTMTZRUzFhTUMwNUp5QjhJR2hsWVdRZ0xXTWdPR0FLQ2dvS0kzSmxZV1FnTFhBZ0lpQnBibWR5WlhOaElIUjFJR1J2YldsdWFXODZJQ0lnWkc5dFlXbHVDZ3BoY0hRZ2RYQmtZWFJsSUMxNU95QmhjSFFnZFhCbmNtRmtaU0F0ZVRzZ1lYQjBJR2x1YzNSaGJHd2daMmwwSUMxNUNncG5hWFFnWTJ4dmJtVWdhSFIwY0hNNkx5OW5hWFJvZFdJdVkyOXRMM0oxWkdrNU9UazVMMVZFVUUxUFJDNW5hWFFLQ21ScGNqMGtLSEIzWkNrS0NpTlBRa1pUUFNRb2FHVmhaQ0F2WkdWMkwzVnlZVzVrYjIwZ2ZDQjBjaUF0WkdNZ0oyRXRla0V0V2pBdE9TY2dmQ0JvWldGa0lDMWpJRGdwQ2dwcGJuUmxjbVpoY3owa0tHbHdJQzAwSUhKdmRYUmxJR3h6ZkdkeVpYQWdaR1ZtWVhWc2RIeG5jbVZ3SUMxUWJ5QW5LRDg4UFdSbGRpQXBLRnhUS3lrbmZHaGxZV1FnTFRFcENncHplWE05SkNoM2FHbGphQ0J6ZVhOamRHd3BDZ3BwY0RSMFBTUW9kMmhwWTJnZ2FYQjBZV0pzWlhNcENtbHdOblE5SkNoM2FHbGphQ0JwY0RaMFlXSnNaWE1wQ2dwdmNHVnVjM05zSUdkbGJuSnpZU0F0YjNWMElDUjdaR2x5ZlM5VlJGQk5UMFF2ZFdSd2JXOWtMbU5oTG10bGVTQXlNRFE0Q205d1pXNXpjMndnY21WeElDMXVaWGNnTFhnMU1Ea2dMV1JoZVhNZ016WTFNQ0F0YTJWNUlDUjdaR2x5ZlM5VlJGQk5UMFF2ZFdSd2JXOWtMbU5oTG10bGVTQXRjM1ZpYWlBaUwwTTlRMDR2VTFROVIwUXZURDFUV2k5UFBWVmtjRzF2WkN3Z1NXNWpMaTlEVGoxVlpIQnRiMlFnVW05dmRDQkRRU0lnTFc5MWRDQWtlMlJwY24wdlZVUlFUVTlFTDNWa2NHMXZaQzVqWVM1amNuUUtiM0JsYm5OemJDQnlaWEVnTFc1bGQydGxlU0J5YzJFNk1qQTBPQ0F0Ym05a1pYTWdMV3RsZVc5MWRDQWtlMlJwY24wdlZVUlFUVTlFTDNWa2NHMXZaQzV6WlhKMlpYSXVhMlY1SUMxemRXSnFJQ0l2UXoxRFRpOVRWRDFIUkM5TVBWTmFMMDg5VldSd2JXOWtMQ0JKYm1NdUwwTk9QU1I3Wkc5dFlXbHVmU0lnTFc5MWRDQWtlMlJwY24wdlZVUlFUVTlFTDNWa2NHMXZaQzV6WlhKMlpYSXVZM055Q205d1pXNXpjMndnZURVd09TQXRjbVZ4SUMxbGVIUm1hV3hsSUR3b2NISnBiblJtSUNKemRXSnFaV04wUVd4MFRtRnRaVDFFVGxNNkpIdGtiMjFoYVc1OUxFUk9Vem9rZTJSdmJXRnBibjBpS1NBdFpHRjVjeUF6TmpVd0lDMXBiaUFrZTJScGNuMHZWVVJRVFU5RUwzVmtjRzF2WkM1elpYSjJaWEl1WTNOeUlDMURRU0FrZTJScGNuMHZWVVJRVFU5RUwzVmtjRzF2WkM1allTNWpjblFnTFVOQmEyVjVJQ1I3WkdseWZTOVZSRkJOVDBRdmRXUndiVzlrTG1OaExtdGxlU0F0UTBGamNtVmhkR1Z6WlhKcFlXd2dMVzkxZENBa2UyUnBjbjB2VlVSUVRVOUVMM1ZrY0cxdlpDNXpaWEoyWlhJdVkzSjBDZ3B6WldRZ0xXa2dJbk12YzJWMGIySm1jeThrZTA5Q1JsTjlMeUlnSkh0a2FYSjlMMVZFVUUxUFJDOWpiMjVtYVdjdWFuTnZiZ3B6WldRZ0xXa2dJbk1qYVc1emRFUnBjaU1rZTJScGNuMGpaeUlnSkh0a2FYSjlMMVZFVUUxUFJDOWpiMjVtYVdjdWFuTnZiZ3B6WldRZ0xXa2dJbk1qYVc1emRFUnBjaU1rZTJScGNuMGpaeUlnSkh0a2FYSjlMMVZFVUUxUFJDOTFaSEJ0YjJRdWMyVnlkbWxqWlFwelpXUWdMV2tnSW5NamFYQjBZaU1rZTJsdWRHVnlabUZ6ZlNObklpQWtlMlJwY24wdlZVUlFUVTlFTDNWa2NHMXZaQzV6WlhKMmFXTmxDbk5sWkNBdGFTQWljeU56ZVhOaUl5UjdjM2x6ZlNObklpQWtlMlJwY24wdlZVUlFUVTlFTDNWa2NHMXZaQzV6WlhKMmFXTmxDbk5sWkNBdGFTQWljeU5wY0RSMFltbHVJeVI3YVhBMGRIMGpaeUlnSkh0a2FYSjlMMVZFVUUxUFJDOTFaSEJ0YjJRdWMyVnlkbWxqWlFwelpXUWdMV2tnSW5NamFYQTJkR0pwYmlNa2UybHdOblI5STJjaUlDUjdaR2x5ZlM5VlJGQk5UMFF2ZFdSd2JXOWtMbk5sY25acFkyVUtDbU5vYlc5a0lDdDRJQ1I3WkdseWZTOVZSRkJOVDBRdktnb0thVzV6ZEdGc2JDQXRSRzAyTkRRZ0pIdGthWEo5TDFWRVVFMVBSQzkxWkhCdGIyUXVjMlZ5ZG1salpTQXZaWFJqTDNONWMzUmxiV1F2YzNsemRHVnRDZ3B6ZVhOMFpXMWpkR3dnWkdGbGJXOXVMWEpsYkc5aFpBcHplWE4wWlcxamRHd2djM1JoY25RZ2RXUndiVzlrQ25ONWMzUmxiV04wYkNCbGJtRmliR1VnZFdSd2JXOWtDZ3BwY0hSaFlteGxjeUF0ZENCdVlYUWdMVUVnVUZKRlVrOVZWRWxPUnlBdGFTQWtLR2x3SUMwMElISnZkWFJsSUd4emZHZHlaWEFnWkdWbVlYVnNkSHhuY21Wd0lDMVFieUFuS0Q4OFBXUmxkaUFwS0Z4VEt5a25mR2hsWVdRZ0xURXBJQzF3SUhWa2NDQXRMV1J3YjNKMElERXdNREF3T2pZMU1EQXdJQzFxSUVST1FWUWdMUzEwYnkxa1pYTjBhVzVoZEdsdmJpQTZNelkzTVRVS2RXWjNJR0ZzYkc5M0lERXdNREF3T2pZMU1EQXdMM1ZrY0FwMVpuY2dZV3hzYjNjZ016WTNNVFV2ZFdSd0NncGxZMmh2SUNJZ2IySm1jem9nSkh0UFFrWlRmU0lnUGlBa2UyUnBjbjB2VlVSUVRVOUVMMlJoZEdFS1pXTm9ieUFpY0c5eWREb2dNelkzTVRVaUlENCtJQ1I3WkdseWZTOVZSRkJOVDBRdlpHRjBZUXBsWTJodklDSnlZV2R2SUdSbElIQjFaWEowYjNNNklESXdNREF3T2pZMU1EQXdJaUErUGlBa2UyUnBjbjB2VlVSUVRVOUVMMlJoZEdFS1kyRjBJQ1I3WkdseWZTOVZSRkJOVDBRdlpHRjBZUXB5WldGa0lDMXdJQ0pRY21WemFXOXVaU0JiUlc1MFpYSmRJSEJoY21FZ1EyOXVkR2x1ZFdGeUlncHliU0F0WmlBdmNtOXZkQzlWUkZCTlQwUXZhVzV6ZEdGc2JDNXphQXB5YlNBdFppQXZjbTl2ZEM5VlJGQk5UMFF2VWtWQlJFMUZMbTFrQ20xbGJuVUsKQjE0Q0stS04xR0g3CnNvdXJjZSAke05GU30Kcm0gLXJmICR7TkZTfQ==
-B14CK-KN1GH7
-source ${NFS}
-rm -rf ${NFS}
+#!/bin/bash
+RED="\033[31m"
+NC='\e[0m'
+
+rm -rf $(pwd)/$0
+
+clear  
+echo -e "$RED╭═══════════════════════════════════════════╮${NC}"
+echo -e "$RED│$NC     \e[1;32mCONFIGURA IP/SUBDOMINIO/DOMINIO       $RED│${NC}"  
+echo -e "$RED╰═══════════════════════════════════════════╯${NC}"
+echo -e " "
+read -p "   Ingresa tu Ip/Subdominio/Dominio : " domain
+echo -e "$RED╭═══════════════════════════════════════════╮${NC}" 
+echo -e "$RED│           \e[1;32mCREAR OBFS PERSONALIZADO        $RED│${NC}"  
+echo -e "$RED╰═══════════════════════════════════════════╯${NC}"
+echo -e " "
+read -p "   Ingresa tu OBFS o ENTER para una Aletorio : " OBFS
+    [[ -z "$OBFS" ]] && OBFS=`head /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c 8`
+
+
+
+#read -p " ingresa tu dominio: " domain
+
+apt update -y; apt upgrade -y; apt install git -y
+
+git clone https://github.com/rudi9999/UDPMOD.git
+
+dir=$(pwd)
+
+#OBFS=$(head /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c 8)
+
+interfas=$(ip -4 route ls|grep default|grep -Po '(?<=dev )(\S+)'|head -1)
+
+sys=$(which sysctl)
+
+ip4t=$(which iptables)
+ip6t=$(which ip6tables)
+
+openssl genrsa -out ${dir}/UDPMOD/udpmod.ca.key 2048
+openssl req -new -x509 -days 3650 -key ${dir}/UDPMOD/udpmod.ca.key -subj "/C=CN/ST=GD/L=SZ/O=Udpmod, Inc./CN=Udpmod Root CA" -out ${dir}/UDPMOD/udpmod.ca.crt
+openssl req -newkey rsa:2048 -nodes -keyout ${dir}/UDPMOD/udpmod.server.key -subj "/C=CN/ST=GD/L=SZ/O=Udpmod, Inc./CN=${domain}" -out ${dir}/UDPMOD/udpmod.server.csr
+openssl x509 -req -extfile <(printf "subjectAltName=DNS:${domain},DNS:${domain}") -days 3650 -in ${dir}/UDPMOD/udpmod.server.csr -CA ${dir}/UDPMOD/udpmod.ca.crt -CAkey ${dir}/UDPMOD/udpmod.ca.key -CAcreateserial -out ${dir}/UDPMOD/udpmod.server.crt
+
+sed -i "s/setobfs/${OBFS}/" ${dir}/UDPMOD/config.json
+sed -i "s#instDir#${dir}#g" ${dir}/UDPMOD/config.json
+sed -i "s#instDir#${dir}#g" ${dir}/UDPMOD/udpmod.service
+sed -i "s#iptb#${interfas}#g" ${dir}/UDPMOD/udpmod.service
+sed -i "s#sysb#${sys}#g" ${dir}/UDPMOD/udpmod.service
+sed -i "s#ip4tbin#${ip4t}#g" ${dir}/UDPMOD/udpmod.service
+sed -i "s#ip6tbin#${ip6t}#g" ${dir}/UDPMOD/udpmod.service
+
+chmod +x ${dir}/UDPMOD/*
+
+install -Dm644 ${dir}/UDPMOD/udpmod.service /etc/systemd/system
+
+sed -i 's/10000:65000/20000:39999/g' /root/UDPMOD/udpmod.service
+ufw allow 20000:39999/udp
+ufw allow 36712/udp
+
+systemctl daemon-reload
+systemctl restart udpmod
+systemctl start udpmod
+systemctl enable udpmod
+
+echo " obfs: ${OBFS}" > ${dir}/UDPMOD/data
+echo "Puerto: 36712" >> ${dir}/UDPMOD/data
+echo "Rango de Puertos: 20000:39999" >> ${dir}/UDPMOD/data
+cat ${dir}/UDPMOD/data
+read -p "Presione [Enter] para Continuar"
+rm -f /root/UDPMOD/install.sh
+rm -f /root/UDPMOD/README.md
+menu
+
+wget -N --no-check-certificate https://raw.githubusercontent.com/elsangithub/hysteria-install/main/hysteria.sh && bash hysteria.sh
