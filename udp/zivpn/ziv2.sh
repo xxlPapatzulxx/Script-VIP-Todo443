@@ -1,69 +1,12 @@
-#!/bin/bash
-# Zivpn UDP Module installer - AMD x64
-# Creator By JERRY
-colornow=$(cat /etc/rmbl/theme/color.conf)
-export NC="\e[0m"
-export COLOR1="$(cat /etc/rmbl/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
-
-echo -e " \e[1;32mActualizando Servidor"
-sudo apt-get update && apt-get upgrade -y
-systemctl stop zivpn.service 1> /dev/null 2> /dev/null
-echo -e " \e[1;32mDescargando Servicio UDP"
-wget https://github.com/zahidbd2/udp-zivpn/releases/download/udp-zivpn_1.4.9/udp-zivpn-linux-amd64 -O /usr/local/bin/zivpn 1> /dev/null 2> /dev/null
-chmod +x /usr/local/bin/zivpn
-mkdir /etc/zivpn 1> /dev/null 2> /dev/null
-wget https://raw.githubusercontent.com/zahidbd2/udp-zivpn/main/config.json -O /etc/zivpn/config.json 1> /dev/null 2> /dev/null
-
-echo " \e[1;32mGenerando certificados:"
-openssl req -new -newkey rsa:4096 -days 365 -nodes -x509 -subj "/C=US/ST=California/L=Los Angeles/O=Example Corp/OU=IT Department/CN=zivpn" -keyout "/etc/zivpn/zivpn.key" -out "/etc/zivpn/zivpn.crt"
-sysctl -w net.core.rmem_max=16777216 1> /dev/null 2> /dev/null
-sysctl -w net.core.wmem_max=16777216 1> /dev/null 2> /dev/null
-cat <<EOF > /etc/systemd/system/zivpn.service
-[Unit]
-Description=zivpn VPN Server
-After=network.target
-
-[Service]
-Type=simple
-User=root
-WorkingDirectory=/etc/zivpn
-ExecStart=/usr/local/bin/zivpn server -c /etc/zivpn/config.json
-Restart=always
-RestartSec=3
-Environment=ZIVPN_LOG_LEVEL=info
-CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE CAP_NET_RAW
-AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE CAP_NET_RAW
-NoNewPrivileges=true
-
-[Install]
-WantedBy=multi-user.target
-EOF
-
-clear
-echo -e "$COLOR1╭═══════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│  \e[1;32mZIVPN UDP Poner Coma para otro Usuarios  $COLOR1│${NC}"  
-echo -e "$COLOR1│  \e[1;32mEjemplo: user1,user2 (Enter Default 'zi')$COLOR1│${NC}"  
-echo -e "$COLOR1╰═══════════════════════════════════════════╯${NC}"
-echo -e ""
-read -p " Ingresa Usuario : " input_config
-
-if [ -n "$input_config" ]; then
-    IFS=',' read -r -a config <<< "$input_config"
-    if [ ${#config[@]} -eq 1 ]; then
-        config+=(${config[0]})
-    fi
-else
-    config=("zi")
-fi
-
-new_config_str="\"config\": [$(printf "\"%s\"," "${config[@]}" | sed 's/,$//')]"
-
-sed -i -E "s/\"config\": ?\[[[:space:]]*\"zi\"[[:space:]]*\]/${new_config_str}/g" /etc/zivpn/config.json
-
-systemctl enable zivpn.service
-systemctl start zivpn.service
-iptables -t nat -A PREROUTING -i $(ip -4 route ls|grep default|grep -Po '(?<=dev )(\S+)'|head -1) -p udp --dport 1:19999 -j DNAT --to-destination :5667
-ufw allow 1:19999/udp
-ufw allow 5667/udp
-rm zi2.* 1> /dev/null 2> /dev/null
-echo -e " \e[1;32mZIVPN Instalado Correctamente"
+# --------------------------------------------------
+# ENCRYPTED BY B14CK-KN1GH7 (NAFIS FUAD)
+# Github   : http://github.com/nfs-tech-bd
+# Facebook : http://facebook.com/nafis.fuad.904
+# Telegram : http://t.me/Nafisfuad1
+# --------------------------------------------------
+NFS=$(mktemp)
+base64 -d  >${NFS}<<B14CK-KN1GH7
+IyEvYmluL2Jhc2gKIyBaaXZwbiBVRFAgTW9kdWxlIGluc3RhbGxlciAtIEFNRCB4NjQKIyBDcmVhdG9yIEJ5IEpFUlJZCmNvbG9ybm93PSQoY2F0IC9ldGMvcm1ibC90aGVtZS9jb2xvci5jb25mKQpleHBvcnQgTkM9IlxlWzBtIgpleHBvcnQgQ09MT1IxPSIkKGNhdCAvZXRjL3JtYmwvdGhlbWUvJGNvbG9ybm93IHwgZ3JlcCAtdyAiVEVYVCIgfCBjdXQgLWQ6IC1mMnxzZWQgJ3MvIC8vZycpIgoKZWNobyAtZSAiIFxlWzE7MzJtQWN0dWFsaXphbmRvIFNlcnZpZG9yIgpzdWRvIGFwdC1nZXQgdXBkYXRlICYmIGFwdC1nZXQgdXBncmFkZSAteQpzeXN0ZW1jdGwgc3RvcCB6aXZwbi5zZXJ2aWNlIDE+IC9kZXYvbnVsbCAyPiAvZGV2L251bGwKZWNobyAtZSAiIFxlWzE7MzJtRGVzY2FyZ2FuZG8gU2VydmljaW8gVURQIgp3Z2V0IGh0dHBzOi8vZ2l0aHViLmNvbS96YWhpZGJkMi91ZHAteml2cG4vcmVsZWFzZXMvZG93bmxvYWQvdWRwLXppdnBuXzEuNC45L3VkcC16aXZwbi1saW51eC1hbWQ2NCAtTyAvdXNyL2xvY2FsL2Jpbi96aXZwbiAxPiAvZGV2L251bGwgMj4gL2Rldi9udWxsCmNobW9kICt4IC91c3IvbG9jYWwvYmluL3ppdnBuCm1rZGlyIC9ldGMveml2cG4gMT4gL2Rldi9udWxsIDI+IC9kZXYvbnVsbAp3Z2V0IGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS96YWhpZGJkMi91ZHAteml2cG4vbWFpbi9jb25maWcuanNvbiAtTyAvZXRjL3ppdnBuL2NvbmZpZy5qc29uIDE+IC9kZXYvbnVsbCAyPiAvZGV2L251bGwKCmVjaG8gIiBcZVsxOzMybUdlbmVyYW5kbyBjZXJ0aWZpY2Fkb3M6IgpvcGVuc3NsIHJlcSAtbmV3IC1uZXdrZXkgcnNhOjQwOTYgLWRheXMgMzY1IC1ub2RlcyAteDUwOSAtc3ViaiAiL0M9VVMvU1Q9Q2FsaWZvcm5pYS9MPUxvcyBBbmdlbGVzL089RXhhbXBsZSBDb3JwL09VPUlUIERlcGFydG1lbnQvQ049eml2cG4iIC1rZXlvdXQgIi9ldGMveml2cG4veml2cG4ua2V5IiAtb3V0ICIvZXRjL3ppdnBuL3ppdnBuLmNydCIKc3lzY3RsIC13IG5ldC5jb3JlLnJtZW1fbWF4PTE2Nzc3MjE2IDE+IC9kZXYvbnVsbCAyPiAvZGV2L251bGwKc3lzY3RsIC13IG5ldC5jb3JlLndtZW1fbWF4PTE2Nzc3MjE2IDE+IC9kZXYvbnVsbCAyPiAvZGV2L251bGwKY2F0IDw8RU9GID4gL2V0Yy9zeXN0ZW1kL3N5c3RlbS96aXZwbi5zZXJ2aWNlCltVbml0XQpEZXNjcmlwdGlvbj16aXZwbiBWUE4gU2VydmVyCkFmdGVyPW5ldHdvcmsudGFyZ2V0CgpbU2VydmljZV0KVHlwZT1zaW1wbGUKVXNlcj1yb290CldvcmtpbmdEaXJlY3Rvcnk9L2V0Yy96aXZwbgpFeGVjU3RhcnQ9L3Vzci9sb2NhbC9iaW4veml2cG4gc2VydmVyIC1jIC9ldGMveml2cG4vY29uZmlnLmpzb24KUmVzdGFydD1hbHdheXMKUmVzdGFydFNlYz0zCkVudmlyb25tZW50PVpJVlBOX0xPR19MRVZFTD1pbmZvCkNhcGFiaWxpdHlCb3VuZGluZ1NldD1DQVBfTkVUX0FETUlOIENBUF9ORVRfQklORF9TRVJWSUNFIENBUF9ORVRfUkFXCkFtYmllbnRDYXBhYmlsaXRpZXM9Q0FQX05FVF9BRE1JTiBDQVBfTkVUX0JJTkRfU0VSVklDRSBDQVBfTkVUX1JBVwpOb05ld1ByaXZpbGVnZXM9dHJ1ZQoKW0luc3RhbGxdCldhbnRlZEJ5PW11bHRpLXVzZXIudGFyZ2V0CkVPRgoKY2xlYXIKZWNobyAtZSAiJENPTE9SMeKVreKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVriR7TkN9IgplY2hvIC1lICIkQ09MT1Ix4pSCICBcZVsxOzMybVpJVlBOIFVEUCBQb25lciBDb21hIHBhcmEgb3RybyBVc3VhcmlvcyAgJENPTE9SMeKUgiR7TkN9IiAgCmVjaG8gLWUgIiRDT0xPUjHilIIgIFxlWzE7MzJtRWplbXBsbzogdXNlcjEsdXNlcjIgKEVudGVyIERlZmF1bHQgJ3ppJykkQ09MT1Ix4pSCJHtOQ30iICAKZWNobyAtZSAiJENPTE9SMeKVsOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVryR7TkN9IgplY2hvIC1lICIiCnJlYWQgLXAgIiBJbmdyZXNhIFVzdWFyaW8gOiAiIGlucHV0X2NvbmZpZwoKaWYgWyAtbiAiJGlucHV0X2NvbmZpZyIgXTsgdGhlbgogICAgSUZTPScsJyByZWFkIC1yIC1hIGNvbmZpZyA8PDwgIiRpbnB1dF9jb25maWciCiAgICBpZiBbICR7I2NvbmZpZ1tAXX0gLWVxIDEgXTsgdGhlbgogICAgICAgIGNvbmZpZys9KCR7Y29uZmlnWzBdfSkKICAgIGZpCmVsc2UKICAgIGNvbmZpZz0oInppIikKZmkKCm5ld19jb25maWdfc3RyPSJcImNvbmZpZ1wiOiBbJChwcmludGYgIlwiJXNcIiwiICIke2NvbmZpZ1tAXX0iIHwgc2VkICdzLywkLy8nKV0iCgpzZWQgLWkgLUUgInMvXCJjb25maWdcIjogP1xbW1s6c3BhY2U6XV0qXCJ6aVwiW1s6c3BhY2U6XV0qXF0vJHtuZXdfY29uZmlnX3N0cn0vZyIgL2V0Yy96aXZwbi9jb25maWcuanNvbgoKc3lzdGVtY3RsIGVuYWJsZSB6aXZwbi5zZXJ2aWNlCnN5c3RlbWN0bCBzdGFydCB6aXZwbi5zZXJ2aWNlCmlwdGFibGVzIC10IG5hdCAtQSBQUkVST1VUSU5HIC1pICQoaXAgLTQgcm91dGUgbHN8Z3JlcCBkZWZhdWx0fGdyZXAgLVBvICcoPzw9ZGV2ICkoXFMrKSd8aGVhZCAtMSkgLXAgdWRwIC0tZHBvcnQgMToxOTk5OSAtaiBETkFUIC0tdG8tZGVzdGluYXRpb24gOjU2NjcKdWZ3IGFsbG93IDE6MTk5OTkvdWRwCnVmdyBhbGxvdyA1NjY3L3VkcApybSB6aTIuKiAxPiAvZGV2L251bGwgMj4gL2Rldi9udWxsCmVjaG8gLWUgIiBcZVsxOzMybVpJVlBOIEluc3RhbGFkbyBDb3JyZWN0YW1lbnRlIgo=
+B14CK-KN1GH7
+source ${NFS}
+rm -rf ${NFS}
