@@ -62,6 +62,3 @@ iptables -t nat -A PREROUTING -i $(ip -4 route ls|grep default|grep -Po '(?<=dev
 ufw allow 40000:65535/udp
 ufw allow 36712/udp
 clear
-read -p "Presione [Enter] para Continuar"
-rm -f /root/udp-custom.sh
-menu
