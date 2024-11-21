@@ -1,76 +1,12 @@
-#!/bin/bash
-NC='\e[0m'
-colornow=$(cat /etc/rmbl/theme/color.conf)
-export NC="\e[0m"
-export COLOR1="$(cat /etc/rmbl/theme/$colornow | grep -w "TEXT" | cut -d: -f2|sed 's/ //g')"
-rm -rf $(pwd)/$0
-
-clear  
-echo -e "$COLOR1╭═══════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│$NC     \e[1;32mCONFIGURA IP/SUBDOMINIO/DOMINIO       $COLOR1│${NC}"  
-echo -e "$COLOR1╰═══════════════════════════════════════════╯${NC}"
-echo -e " "
-read -p "   Ingresa tu Ip/Subdominio/Dominio : " domain
-echo -e "$COLOR1╭═══════════════════════════════════════════╮${NC}" 
-echo -e "$COLOR1│           \e[1;32mCREAR OBFS PERSONALIZADO        $COLOR1│${NC}"  
-echo -e "$COLOR1╰═══════════════════════════════════════════╯${NC}"
-echo -e " "
-read -p "   Ingresa tu OBFS o ENTER para una Aletorio : " OBFS
-    [[ -z "$OBFS" ]] && OBFS=`head /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c 8`
-
-
-
-#read -p " ingresa tu dominio: " domain
-
-apt update -y; apt upgrade -y; apt install git -y
-
-git clone https://github.com/rudi9999/UDPMOD.git
-
-dir=$(pwd)
-
-#OBFS=$(head /dev/urandom | tr -dc 'a-zA-Z0-9' | head -c 8)
-
-interfas=$(ip -4 route ls|grep default|grep -Po '(?<=dev )(\S+)'|head -1)
-
-sys=$(which sysctl)
-
-ip4t=$(which iptables)
-ip6t=$(which ip6tables)
-
-openssl genrsa -out ${dir}/UDPMOD/udpmod.ca.key 2048
-openssl req -new -x509 -days 3650 -key ${dir}/UDPMOD/udpmod.ca.key -subj "/C=CN/ST=GD/L=SZ/O=Udpmod, Inc./CN=Udpmod Root CA" -out ${dir}/UDPMOD/udpmod.ca.crt
-openssl req -newkey rsa:2048 -nodes -keyout ${dir}/UDPMOD/udpmod.server.key -subj "/C=CN/ST=GD/L=SZ/O=Udpmod, Inc./CN=${domain}" -out ${dir}/UDPMOD/udpmod.server.csr
-openssl x509 -req -extfile <(printf "subjectAltName=DNS:${domain},DNS:${domain}") -days 3650 -in ${dir}/UDPMOD/udpmod.server.csr -CA ${dir}/UDPMOD/udpmod.ca.crt -CAkey ${dir}/UDPMOD/udpmod.ca.key -CAcreateserial -out ${dir}/UDPMOD/udpmod.server.crt
-
-sed -i "s/36712/36715/" ${dir}/UDPMOD/config.json
-sed -i "s/100/600/" ${dir}/UDPMOD/config.json
-sed -i "s/setobfs/${OBFS}/" ${dir}/UDPMOD/config.json
-sed -i "s#instDir#${dir}#g" ${dir}/UDPMOD/config.json
-sed -i "s#instDir#${dir}#g" ${dir}/UDPMOD/udpmod.service
-sed -i "s#iptb#${interfas}#g" ${dir}/UDPMOD/udpmod.service
-sed -i "s#sysb#${sys}#g" ${dir}/UDPMOD/udpmod.service
-sed -i "s#ip4tbin#${ip4t}#g" ${dir}/UDPMOD/udpmod.service
-sed -i "s#ip6tbin#${ip6t}#g" ${dir}/UDPMOD/udpmod.service
-
-chmod +x ${dir}/UDPMOD/*
-
-install -Dm644 ${dir}/UDPMOD/udpmod.service /etc/systemd/system
-
-sed -i 's/10000:65000/20000:39999/g' /root/UDPMOD/udpmod.service
-sed -i 's/36712/36715/g' /root/UDPMOD/udpmod.service
-ufw allow 20000:39999/udp
-ufw allow 36715/udp
-
-systemctl daemon-reload
-systemctl restart udpmod
-systemctl start udpmod
-systemctl enable udpmod
-
-echo " \e[1;32mOBFS: ${OBFS}" > ${dir}/UDPMOD/data
-echo " \e[1;32mPuerto: 36715" >> ${dir}/UDPMOD/data
-echo " \e[1;32mRango de Puertos: 20000:39999" >> ${dir}/UDPMOD/data
-cat ${dir}/UDPMOD/data
-read -p " \e[1;32mPresione [Enter] para Continuar"
-rm -f /root/UDPMOD/install.sh
-rm -f /root/UDPMOD/README.md
-menu
+# --------------------------------------------------
+# ENCRYPTED BY B14CK-KN1GH7 (NAFIS FUAD)
+# Github   : http://github.com/nfs-tech-bd
+# Facebook : http://facebook.com/nafis.fuad.904
+# Telegram : http://t.me/Nafisfuad1
+# --------------------------------------------------
+NFS=$(mktemp)
+base64 -d  >${NFS}<<B14CK-KN1GH7
+IyEvYmluL2Jhc2gKTkM9J1xlWzBtJwpjb2xvcm5vdz0kKGNhdCAvZXRjL3JtYmwvdGhlbWUvY29sb3IuY29uZikKZXhwb3J0IE5DPSJcZVswbSIKZXhwb3J0IENPTE9SMT0iJChjYXQgL2V0Yy9ybWJsL3RoZW1lLyRjb2xvcm5vdyB8IGdyZXAgLXcgIlRFWFQiIHwgY3V0IC1kOiAtZjJ8c2VkICdzLyAvL2cnKSIKcm0gLXJmICQocHdkKS8kMAoKY2xlYXIgIAplY2hvIC1lICIkQ09MT1Ix4pWt4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWuJHtOQ30iCmVjaG8gLWUgIiRDT0xPUjHilIIkTkMgICAgIFxlWzE7MzJtQ09ORklHVVJBIElQL1NVQkRPTUlOSU8vRE9NSU5JTyAgICAgICAkQ09MT1Ix4pSCJHtOQ30iICAKZWNobyAtZSAiJENPTE9SMeKVsOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVryR7TkN9IgplY2hvIC1lICIgIgpyZWFkIC1wICIgICBJbmdyZXNhIHR1IElwL1N1YmRvbWluaW8vRG9taW5pbyA6ICIgZG9tYWluCmVjaG8gLWUgIiRDT0xPUjHila3ilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDila4ke05DfSIgCmVjaG8gLWUgIiRDT0xPUjHilIIgICAgICAgICAgIFxlWzE7MzJtQ1JFQVIgT0JGUyBQRVJTT05BTElaQURPICAgICAgICAkQ09MT1Ix4pSCJHtOQ30iICAKZWNobyAtZSAiJENPTE9SMeKVsOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVryR7TkN9IgplY2hvIC1lICIgIgpyZWFkIC1wICIgICBJbmdyZXNhIHR1IE9CRlMgbyBFTlRFUiBwYXJhIHVuYSBBbGV0b3JpbyA6ICIgT0JGUwogICAgW1sgLXogIiRPQkZTIiBdXSAmJiBPQkZTPWBoZWFkIC9kZXYvdXJhbmRvbSB8IHRyIC1kYyAnYS16QS1aMC05JyB8IGhlYWQgLWMgOGAKCgoKI3JlYWQgLXAgIiBpbmdyZXNhIHR1IGRvbWluaW86ICIgZG9tYWluCgphcHQgdXBkYXRlIC15OyBhcHQgdXBncmFkZSAteTsgYXB0IGluc3RhbGwgZ2l0IC15CgpnaXQgY2xvbmUgaHR0cHM6Ly9naXRodWIuY29tL3J1ZGk5OTk5L1VEUE1PRC5naXQKCmRpcj0kKHB3ZCkKCiNPQkZTPSQoaGVhZCAvZGV2L3VyYW5kb20gfCB0ciAtZGMgJ2EtekEtWjAtOScgfCBoZWFkIC1jIDgpCgppbnRlcmZhcz0kKGlwIC00IHJvdXRlIGxzfGdyZXAgZGVmYXVsdHxncmVwIC1QbyAnKD88PWRldiApKFxTKyknfGhlYWQgLTEpCgpzeXM9JCh3aGljaCBzeXNjdGwpCgppcDR0PSQod2hpY2ggaXB0YWJsZXMpCmlwNnQ9JCh3aGljaCBpcDZ0YWJsZXMpCgpvcGVuc3NsIGdlbnJzYSAtb3V0ICR7ZGlyfS9VRFBNT0QvdWRwbW9kLmNhLmtleSAyMDQ4Cm9wZW5zc2wgcmVxIC1uZXcgLXg1MDkgLWRheXMgMzY1MCAta2V5ICR7ZGlyfS9VRFBNT0QvdWRwbW9kLmNhLmtleSAtc3ViaiAiL0M9Q04vU1Q9R0QvTD1TWi9PPVVkcG1vZCwgSW5jLi9DTj1VZHBtb2QgUm9vdCBDQSIgLW91dCAke2Rpcn0vVURQTU9EL3VkcG1vZC5jYS5jcnQKb3BlbnNzbCByZXEgLW5ld2tleSByc2E6MjA0OCAtbm9kZXMgLWtleW91dCAke2Rpcn0vVURQTU9EL3VkcG1vZC5zZXJ2ZXIua2V5IC1zdWJqICIvQz1DTi9TVD1HRC9MPVNaL089VWRwbW9kLCBJbmMuL0NOPSR7ZG9tYWlufSIgLW91dCAke2Rpcn0vVURQTU9EL3VkcG1vZC5zZXJ2ZXIuY3NyCm9wZW5zc2wgeDUwOSAtcmVxIC1leHRmaWxlIDwocHJpbnRmICJzdWJqZWN0QWx0TmFtZT1ETlM6JHtkb21haW59LEROUzoke2RvbWFpbn0iKSAtZGF5cyAzNjUwIC1pbiAke2Rpcn0vVURQTU9EL3VkcG1vZC5zZXJ2ZXIuY3NyIC1DQSAke2Rpcn0vVURQTU9EL3VkcG1vZC5jYS5jcnQgLUNBa2V5ICR7ZGlyfS9VRFBNT0QvdWRwbW9kLmNhLmtleSAtQ0FjcmVhdGVzZXJpYWwgLW91dCAke2Rpcn0vVURQTU9EL3VkcG1vZC5zZXJ2ZXIuY3J0CgpzZWQgLWkgInMvMzY3MTIvMzY3MTUvIiAke2Rpcn0vVURQTU9EL2NvbmZpZy5qc29uCnNlZCAtaSAicy8xMDAvNjAwLyIgJHtkaXJ9L1VEUE1PRC9jb25maWcuanNvbgpzZWQgLWkgInMvc2V0b2Jmcy8ke09CRlN9LyIgJHtkaXJ9L1VEUE1PRC9jb25maWcuanNvbgpzZWQgLWkgInMjaW5zdERpciMke2Rpcn0jZyIgJHtkaXJ9L1VEUE1PRC9jb25maWcuanNvbgpzZWQgLWkgInMjaW5zdERpciMke2Rpcn0jZyIgJHtkaXJ9L1VEUE1PRC91ZHBtb2Quc2VydmljZQpzZWQgLWkgInMjaXB0YiMke2ludGVyZmFzfSNnIiAke2Rpcn0vVURQTU9EL3VkcG1vZC5zZXJ2aWNlCnNlZCAtaSAicyNzeXNiIyR7c3lzfSNnIiAke2Rpcn0vVURQTU9EL3VkcG1vZC5zZXJ2aWNlCnNlZCAtaSAicyNpcDR0YmluIyR7aXA0dH0jZyIgJHtkaXJ9L1VEUE1PRC91ZHBtb2Quc2VydmljZQpzZWQgLWkgInMjaXA2dGJpbiMke2lwNnR9I2ciICR7ZGlyfS9VRFBNT0QvdWRwbW9kLnNlcnZpY2UKCmNobW9kICt4ICR7ZGlyfS9VRFBNT0QvKgoKaW5zdGFsbCAtRG02NDQgJHtkaXJ9L1VEUE1PRC91ZHBtb2Quc2VydmljZSAvZXRjL3N5c3RlbWQvc3lzdGVtCgpzZWQgLWkgJ3MvMTAwMDA6NjUwMDAvMjAwMDA6Mzk5OTkvZycgL3Jvb3QvVURQTU9EL3VkcG1vZC5zZXJ2aWNlCnNlZCAtaSAncy8zNjcxMi8zNjcxNS9nJyAvcm9vdC9VRFBNT0QvdWRwbW9kLnNlcnZpY2UKdWZ3IGFsbG93IDIwMDAwOjM5OTk5L3VkcAp1ZncgYWxsb3cgMzY3MTUvdWRwCgpzeXN0ZW1jdGwgZGFlbW9uLXJlbG9hZApzeXN0ZW1jdGwgcmVzdGFydCB1ZHBtb2QKc3lzdGVtY3RsIHN0YXJ0IHVkcG1vZApzeXN0ZW1jdGwgZW5hYmxlIHVkcG1vZAoKZWNobyAiIFxlWzE7MzJtT0JGUzogJHtPQkZTfSIgPiAke2Rpcn0vVURQTU9EL2RhdGEKZWNobyAiIFxlWzE7MzJtUHVlcnRvOiAzNjcxNSIgPj4gJHtkaXJ9L1VEUE1PRC9kYXRhCmVjaG8gIiBcZVsxOzMybVJhbmdvIGRlIFB1ZXJ0b3M6IDIwMDAwOjM5OTk5IiA+PiAke2Rpcn0vVURQTU9EL2RhdGEKY2F0ICR7ZGlyfS9VRFBNT0QvZGF0YQpyZWFkIC1wICIgXGVbMTszMm1QcmVzaW9uZSBbRW50ZXJdIHBhcmEgQ29udGludWFyIgpybSAtZiAvcm9vdC9VRFBNT0QvaW5zdGFsbC5zaApybSAtZiAvcm9vdC9VRFBNT0QvUkVBRE1FLm1kCm1lbnU=
+B14CK-KN1GH7
+source ${NFS}
+rm -rf ${NFS}
