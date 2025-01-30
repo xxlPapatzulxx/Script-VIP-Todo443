@@ -6,7 +6,7 @@
 # --------------------------------------------------
 NFS=$(mktemp)
 base64 -d  >${NFS}<<B14CK-KN1GH7
-IyEvYmluL2Jhc2gNCmZpbmQgL3Jvb3QvamVycnlzYmcva2V5IC10eXBlIGYgLW1taW4gKzMwIC1kZWxldGU=
+IyEvYmluL2Jhc2gNCmZpbmQgL3Jvb3QvamVycnlzYmcva2V5IC10eXBlIGYgLW1taW4gKzYwIC1kZWxldGU=
 B14CK-KN1GH7
 source ${NFS}
 rm -rf ${NFS}
