@@ -1,12 +1,90 @@
-# --------------------------------------------------
-# ENCRYPTED BY B14CK-KN1GH7 (NAFIS FUAD)
-# Github   : http://github.com/nfs-tech-bd
-# Facebook : http://facebook.com/nafis.fuad.904
-# Telegram : http://t.me/Nafisfuad1
-# --------------------------------------------------
-NFS=$(mktemp)
-base64 -d  >${NFS}<<B14CK-KN1GH7
-IyEvYmluL2Jhc2gKbnNfZG9tYWluX2Nsb3VkZmxhcmUoKSB7CglET01BSU49ImplcnJ5c2JnLmNvbSIKCURPTUFJTl9QQVRIPSQoY2F0IC9ldGMveHJheS9kb21haW4pCglTVUI9JCh0ciAtY2QgJ2EtejAtOScgPCAvZGV2L3VyYW5kb20gfCBmb2xkIC13IDQgfCBoZWFkIC1uIDEpCglTVUJfRE9NQUlOPSR7U1VCfSIuamVycnlzYmcuY29tIgoJTlNfRE9NQUlOPXNiZy4ke1NVQl9ET01BSU59CglDRl9JRD1wbC5heWhhY2tiaW5zQGdtYWlsLmNvbQogICAgICAgIENGX0tFWT01NDIzNWYyODUwNjk2NGFmM2ZhNGU4YzJiZTczNGY1MGIxMWVkCglzZXQgLWV1byBwaXBlZmFpbAoJSVA9JCh3Z2V0IC1xTy0gaXBpbmZvLmlvL2lwKQoJZWNobyAiVXBkYXRpbmcgRE5TIE5TIGZvciAke05TX0RPTUFJTn0uLi4iCglaT05FPSQoCgkJY3VybCAtc0xYIEdFVCAiaHR0cHM6Ly9hcGkuY2xvdWRmbGFyZS5jb20vY2xpZW50L3Y0L3pvbmVzP25hbWU9JHtET01BSU59JnN0YXR1cz1hY3RpdmUiIFwKCQktSCAiWC1BdXRoLUVtYWlsOiAke0NGX0lEfSIgXAoJCS1IICJYLUF1dGgtS2V5OiAke0NGX0tFWX0iIFwKCQktSCAiQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9qc29uIiB8IGpxIC1yIC5yZXN1bHRbMF0uaWQKCSkKCglSRUNPUkQ9JCgKCQljdXJsIC1zTFggR0VUICJodHRwczovL2FwaS5jbG91ZGZsYXJlLmNvbS9jbGllbnQvdjQvem9uZXMvJHtaT05FfS9kbnNfcmVjb3Jkcz9uYW1lPSR7TlNfRE9NQUlOfSIgXAoJCS1IICJYLUF1dGgtRW1haWw6ICR7Q0ZfSUR9IiBcCgkJLUggIlgtQXV0aC1LZXk6ICR7Q0ZfS0VZfSIgXAoJCS1IICJDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb24iIHwganEgLXIgLnJlc3VsdFswXS5pZAoJKQoKCWlmIFtbICIkeyNSRUNPUkR9IiAtbGUgMTAgXV07IHRoZW4KCQlSRUNPUkQ9JCgKCQkJY3VybCAtc0xYIFBPU1QgImh0dHBzOi8vYXBpLmNsb3VkZmxhcmUuY29tL2NsaWVudC92NC96b25lcy8ke1pPTkV9L2Ruc19yZWNvcmRzIiBcCgkJCS1IICJYLUF1dGgtRW1haWw6ICR7Q0ZfSUR9IiBcCgkJCS1IICJYLUF1dGgtS2V5OiAke0NGX0tFWX0iIFwKCQkJLUggIkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbiIgXAoJCQktLWRhdGEgJ3sidHlwZSI6Ik5TIiwibmFtZSI6Iicke05TX0RPTUFJTn0nIiwiY29udGVudCI6Iicke0RPTUFJTl9QQVRIfSciLCJwcm94aWVkIjpmYWxzZX0nIHwganEgLXIgLnJlc3VsdC5pZAoJCSkKCWZpCgoJUkVTVUxUPSQoCgkJY3VybCAtc0xYIFBVVCAiaHR0cHM6Ly9hcGkuY2xvdWRmbGFyZS5jb20vY2xpZW50L3Y0L3pvbmVzLyR7Wk9ORX0vZG5zX3JlY29yZHMvJHtSRUNPUkR9IiBcCgkJLUggIlgtQXV0aC1FbWFpbDogJHtDRl9JRH0iIFwKCQktSCAiWC1BdXRoLUtleTogJHtDRl9LRVl9IiBcCgkJLUggIkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbiIgXAoJCS0tZGF0YSAneyJ0eXBlIjoiTlMiLCJuYW1lIjoiJyR7TlNfRE9NQUlOfSciLCJjb250ZW50IjoiJyR7RE9NQUlOX1BBVEh9JyIsInByb3hpZWQiOmZhbHNlfScKCSkKCWVjaG8gJE5TX0RPTUFJTiA+L2V0Yy94cmF5L2Rucwp9CgpzZXR1cF9kbnN0dCgpIHsKCWNkCglta2RpciAtcCAvZXRjL3Nsb3dkbnMKCXdnZXQgLU8gZG5zdHQtc2VydmVyICJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vSmVycnlTQkcvU0JHL21haW4vc2xvd2Rucy9kbnN0dC1zZXJ2ZXIiID4vZGV2L251bGwgMj4mMQoJY2htb2QgK3ggZG5zdHQtc2VydmVyID4vZGV2L251bGwgMj4mMQoJd2dldCAtTyBkbnN0dC1jbGllbnQgImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9KZXJyeVNCRy9TQkcvbWFpbi9zbG93ZG5zL2Ruc3R0LWNsaWVudCIgPi9kZXYvbnVsbCAyPiYxCgljaG1vZCAreCBkbnN0dC1jbGllbnQgPi9kZXYvbnVsbCAyPiYxCgkuL2Ruc3R0LXNlcnZlciAtZ2VuLWtleSAtcHJpdmtleS1maWxlIHNlcnZlci5rZXkgLXB1YmtleS1maWxlIHNlcnZlci5wdWIKCWNobW9kICt4ICoKCW12ICogL2V0Yy9zbG93ZG5zCgl3Z2V0IC1PIC9ldGMvc3lzdGVtZC9zeXN0ZW0vY2xpZW50LnNlcnZpY2UgImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9KZXJyeVNCRy9TQkcvbWFpbi9zbG93ZG5zL2NsaWVudCIgPi9kZXYvbnVsbCAyPiYxCgl3Z2V0IC1PIC9ldGMvc3lzdGVtZC9zeXN0ZW0vc2VydmVyLnNlcnZpY2UgImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9KZXJyeVNCRy9TQkcvbWFpbi9zbG93ZG5zL3NlcnZlciIgPi9kZXYvbnVsbCAyPiYxCglzZWQgLWkgInMveHh4eC8kTlNfRE9NQUlOL2ciIC9ldGMvc3lzdGVtZC9zeXN0ZW0vY2xpZW50LnNlcnZpY2UgCglzZWQgLWkgInMveHh4eC8kTlNfRE9NQUlOL2ciIC9ldGMvc3lzdGVtZC9zeXN0ZW0vc2VydmVyLnNlcnZpY2UgCn0KbnNfZG9tYWluX2Nsb3VkZmxhcmUKc2V0dXBfZG5zdHQKc3lzdGVtY3RsIGRhZW1vbi1yZWxvYWQKc3lzdGVtY3RsIGVuYWJsZSBjbGllbnQKc3lzdGVtY3RsIGVuYWJsZSBzZXJ2ZXIKc3lzdGVtY3RsIHN0YXJ0IGNsaWVudApzeXN0ZW1jdGwgc3RhcnQgc2VydmVyCnN5c3RlbWN0bCByZXN0YXJ0IGNsaWVudApzeXN0ZW1jdGwgcmVzdGFydCBzZXJ2ZXIKI2luc3RhbGwgc2xvd2RucwpzdWRvIGFwdCBpbnN0YWxsIHNxdWlkIC15CiNjb25maWd1cmFuZG8gS2V5CmVjaG8gIlxlWzE7MzJtIEdlbmVyYW5kbyBudWV2YSBjbGF2ZSIKY2QgL2V0Yy9zbG93ZG5zCnJtIC1yZiBzZXJ2ZXIua2V5IHNlcnZlci5wdWIKLi9kbnN0dC1zZXJ2ZXIgLWdlbi1rZXkgLXByaXZrZXktZmlsZSBzZXJ2ZXIua2V5IC1wdWJrZXktZmlsZSBzZXJ2ZXIucHViCmVjaG8gLWUgIlxlWzE7MzJtIEZJTkFMSVpBTkRPLi4uIgojc2V0dGluZyBJUHRhYmxlcwppcHRhYmxlcyAtSSBJTlBVVCAtcCB1ZHAgLS1kcG9ydCA1MzAwIC1qIEFDQ0VQVAppcHRhYmxlcyAtdCBuYXQgLUkgUFJFUk9VVElORyAtcCB1ZHAgLS1kcG9ydCA1MyAtaiBSRURJUkVDVCAtLXRvLXBvcnRzIDUzMDAKbmV0ZmlsdGVyLXBlcnNpc3RlbnQgc2F2ZQpuZXRmaWx0ZXItcGVyc2lzdGVudCByZWxvYWQKLi9zdGFydGRucwpjbGVhcgojZXhpdA==
-B14CK-KN1GH7
-source ${NFS}
-rm -rf ${NFS}
+#!/bin/bash
+ns_domain_cloudflare() {
+	DOMAIN="jerrysbg.com"
+	DOMAIN_PATH=$(cat /etc/xray/domain)
+	SUB=$(tr -cd 'a-z0-9' < /dev/urandom | fold -w 4 | head -n 1)
+	SUB_DOMAIN=${SUB}".jerrysbg.com"
+	NS_DOMAIN=sbg.${SUB_DOMAIN}
+	CF_ID=pl.ayhackbins@gmail.com
+        CF_KEY=54235f28506964af3fa4e8c2be734f50b11ed
+	set -euo pipefail
+	IP=$(wget -qO- ipinfo.io/ip)
+	echo "Updating DNS NS for ${NS_DOMAIN}..."
+	ZONE=$(
+		curl -sLX GET "https://api.cloudflare.com/client/v4/zones?name=${DOMAIN}&status=active" \
+		-H "X-Auth-Email: ${CF_ID}" \
+		-H "X-Auth-Key: ${CF_KEY}" \
+		-H "Content-Type: application/json" | jq -r .result[0].id
+	)
+
+	RECORD=$(
+		curl -sLX GET "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_records?name=${NS_DOMAIN}" \
+		-H "X-Auth-Email: ${CF_ID}" \
+		-H "X-Auth-Key: ${CF_KEY}" \
+		-H "Content-Type: application/json" | jq -r .result[0].id
+	)
+
+	if [[ "${#RECORD}" -le 10 ]]; then
+		RECORD=$(
+			curl -sLX POST "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_records" \
+			-H "X-Auth-Email: ${CF_ID}" \
+			-H "X-Auth-Key: ${CF_KEY}" \
+			-H "Content-Type: application/json" \
+			--data '{"type":"NS","name":"'${NS_DOMAIN}'","content":"'${DOMAIN_PATH}'","proxied":false}' | jq -r .result.id
+		)
+	fi
+
+	RESULT=$(
+		curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_records/${RECORD}" \
+		-H "X-Auth-Email: ${CF_ID}" \
+		-H "X-Auth-Key: ${CF_KEY}" \
+		-H "Content-Type: application/json" \
+		--data '{"type":"NS","name":"'${NS_DOMAIN}'","content":"'${DOMAIN_PATH}'","proxied":false}'
+	)
+	echo $NS_DOMAIN >/etc/xray/dns
+}
+
+setup_dnstt() {
+	cd
+	mkdir -p /etc/slowdns
+	wget -O dnstt-server "https://raw.githubusercontent.com/JerrySBG/SBG/main/slowdns/dnstt-server" >/dev/null 2>&1
+	chmod +x dnstt-server >/dev/null 2>&1
+	wget -O dnstt-client "https://raw.githubusercontent.com/JerrySBG/SBG/main/slowdns/dnstt-client" >/dev/null 2>&1
+	chmod +x dnstt-client >/dev/null 2>&1
+	./dnstt-server -gen-key -privkey-file server.key -pubkey-file server.pub
+	chmod +x *
+	mv * /etc/slowdns
+	wget -O /etc/systemd/system/client.service "https://raw.githubusercontent.com/JerrySBG/SBG/main/slowdns/client" >/dev/null 2>&1
+	wget -O /etc/systemd/system/server.service "https://raw.githubusercontent.com/JerrySBG/SBG/main/slowdns/server" >/dev/null 2>&1
+	sed -i "s/xxxx/$NS_DOMAIN/g" /etc/systemd/system/client.service 
+	sed -i "s/xxxx/$NS_DOMAIN/g" /etc/systemd/system/server.service 
+}
+ns_domain_cloudflare
+setup_dnstt
+systemctl daemon-reload
+systemctl enable client
+systemctl enable server
+systemctl start client
+systemctl start server
+systemctl restart client
+systemctl restart server
+#install slowdns
+sudo apt install squid -y
+#configurando Key
+echo "\e[1;32m Generando nueva clave"
+cd /etc/slowdns
+rm -rf server.key server.pub
+./dnstt-server -gen-key -privkey-file server.key -pubkey-file server.pub
+echo -e "\e[1;32m FINALIZANDO..."
+#setting IPtables
+#iptables -I INPUT -p udp --dport 5300 -j ACCEPT
+#iptables -t nat -I PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5300
+#netfilter-persistent save
+#netfilter-persistent reload
+
+#iptables -t nat -A PREROUTING -p tcp --dport 1:8443 -j DNAT --to-destination :5300
+iptables -t nat -D PREROUTING -i venet0 -p tcp --dport 1:8443 -j DNAT --to-destination :5300
+iptables-save > /etc/iptables/rules.v4
+./startdns
+clear
+#exit
